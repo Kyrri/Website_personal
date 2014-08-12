@@ -1,0 +1,38 @@
+body{
+	padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+}
+h1, h2{
+    font-weight: 300; 
+}
+.main_container{
+	width: 100%;
+}
+.content_container{
+	width: 100%;
+}
+.content_container.turqoise{
+	background-color: rgb(34,163,159);
+}
+.content_container.white{
+	background-color: rgb(255,255,255);
+}
+.content_container.grey{
+	background-color: rgb(67,66,66);
+}
+.turqoise h1, h2{
+	color: rgb(255,255,255);
+}
+.white h1, h2{
+	color: rgb(34,163,159);
+}
+.grey{
+	color: rgb(255,255,255);
+}
+.content_section{
+	margin: 50px;
+	text-align: center;
+}
