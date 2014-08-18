@@ -8,6 +8,23 @@ body{
 h1, h2{
     font-weight: 300; 
 }
+.to_intro{
+	background-color: rgb(67,66,66);
+	width: 100px;
+	margin-left: 25px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+	position: absolute;
+	bottom: 0;
+
+}
+.intro{
+	height: 100vh;
+	text-align: center;
+	position: relative;
+}
+
 .main_container{
 	width: 100%;
 }
@@ -16,6 +33,9 @@ h1, h2{
 }
 .content_container.turqoise{
 	background-color: rgb(34,163,159);
+}
+.context_container.yellow{
+	background-color: rgb(254,194,2);
 }
 .content_container.white{
 	background-color: rgb(255,255,255);
@@ -35,4 +55,54 @@ h1, h2{
 .content_section{
 	padding: 50px;
 	text-align: center;
+}
+
+.side_bar{
+	background-color: rgb(67,66,66);
+	-webkit-border-bottom-right-radius: 25px;
+	-webkit-border-bottom-left-radius: 25px;
+	-moz-border-radius-bottomright: 25px;
+	-moz-border-radius-bottomleft: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	width: 100px;
+	z-index: 1;
+	margin-left: 25px;
+	text-align: center;
+	color: white;
+}
+.fixed{
+	position: fixed;
+}
+.absolute{
+	position: absolute;
+	top: 100vh
+}
+.sidebar_item{
+	height: 70px;
+	border-top: 1px solid gray;
+}
+.first{
+	border-top: none;
+}
+.sidebar_item_text{
+  vertical-align: middle;
+  line-height: 70px; 
+}
+.sidebar_collapse{
+	background-color: rgb(67,66,66);
+	-webkit-border-top-left-radius: 25px;
+	-webkit-border-bottom-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	-moz-border-radius-bottomleft: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	z-index: 1;
+	width: 24px;
+	color: white;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 152px;
+	border-right: 1px solid gray;
 }
