@@ -3,83 +3,118 @@
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script>//links and shit</script>
+	<script src="js/jquery.js"></script>
+	<script src="js/javascript_stuff.js"></script>
 
 </head>
 <body>
+
+<!-- Intro -->
+<div class='background'>
+</div>
 <div class='intro'>
-	<div class='sidebar_item to_intro'>
+	<!-- Fixed Picture (of me?) with no grey overlay that will be bacground for everything else (two different pics
+	in the same spot, but the title backgrounds look like its the same pic with grey overlay). With Some
+	Intro Text on top -->
+	<div class='intro_container'>
+	</div>
+	<div class='sidebar_item to_intro' id='intro_flip'>
 		<span class='sidebar_item_text'>
 			v
 		</span>
 	</div>
 </div>
-<div class='sidebar_collapse absolute'>
+
+<!-- Side Bar -->
+<div class='sidebar_collapse absolute expand' id='sidebar_collapse'>
 	<span>
 		<
 	</span>
 </div>
-<div class='side_bar absolute'>
+<div class='side_bar absolute' id='sidebar'>
 	<!-- if width less than certain amount, pre-collapsed?-->
-	<div class='sidebar_item'>
+	<div class='sidebar_item' id='About_sidebar'>
 		<span class='sidebar_item_text'>
 			About
 		</span>
 	</div>
-	<div class='sidebar_item'>
+	<div class='sidebar_item' id='Experiences_sidebar'>
 		<span class='sidebar_item_text'>
 			Experiences
 		</span>
 	</div>
-	<div class='sidebar_item'>
+	<div class='sidebar_item' id='Skills_sidebar'>
 		<span class='sidebar_item_text'>
 			Skills
 		</span>
 	</div>
-	<div class='sidebar_item'>
+	<div class='sidebar_item' id='Interests_sidebar'>
 		<span class='sidebar_item_text'>
 			Interests
 		</span>
 	</div>
-	<div class='sidebar_item'>
+	<div class='sidebar_item' id='Contact_sidebar'>
 		<span class='sidebar_item_text'>
 			Contact
 		</span>
 	</div>
 </div>
-<div class='intro_container'>
+
+<!-- Top Bar -->
+<div class='topbar absolute' id='topbar'>
+----
 </div>
+
+<!-- Main Content -->
 <div class='main_container'>
-	<div class='content_container turqoise'>
-		<div class='content_section'>
-			<h1 id='About'>About</h1>
+	<div class='content_section' id='About'>
+		<div class='content_head grey yellow'>
+			<h1 id='About_header'>About</h1>
+		</div>
+		<div class='content_body'>
 			<p> Text text text text</p>
 		</div>
 	</div>
-	<div class='content_container white'>
-		<div class='content_section'>
-			<h1 id='Experiences'>Experiences</h1>
+
+
+	<div class='content_section' id='Experiences'>
+		<div class='content_head grey blue'>
+			<h1 id='Experiences_header'>Experiences</h1>
+		</div>
+		<div class='content_body'>
 			<p> Text text text text</p>
-			<!--include jobs and side projects
-				have own page linked here for art gallery 
-				and side project pictures and deets-->
+		</div>
+		<!--include jobs and side projects
+			have own page linked here for art gallery 
+			and side project pictures and deets-->
+	</div>
+
+	<div class='content_section' id='Skills'>
+		<div class='content_head grey red'>
+			<h1 id='Skills_header'>Skills</h1>
+		</div>
+		<div class='content_body'>
+			<p> Text text text text</p>
 		</div>
 	</div>
-	<div class='content_container turqoise'>
-		<div class='content_section'>
-			<h1 id='Skills'>Skills</h1>
+
+	<div class='content_section' id='Interests'>
+		<div class='content_head grey green'>
+			<h1 id='Interests_header'>Interests</h1>
+		</div>
+		<div class='content_body'>
+			<p> Text text text text</p>
 		</div>
 	</div>
-	<div class='content_container white'>
-		<div class='content_section'>
-			<h1 id='Interests'>Interests</h1>
+
+	<div class='content_section grey purple' style='padding-bottom: 50px;' id='Contact'>
+		<div class='content_head'>
+			<h1 id='Contact_header'>Contact</h1>
 		</div>
+		<p style='color:white;'> textext </p>
 	</div>
-	<div class='content_container grey'>
-		<div class='content_section'>
-			<h1 id='Contact'>Contact</h1>
-		</div>
-	</div>
+</div>
+
 </div>
 
 </body>
