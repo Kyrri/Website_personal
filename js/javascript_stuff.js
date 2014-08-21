@@ -5,7 +5,7 @@ var content_index = 0;
 
 $(document).ready(function() {
 	//On Load Prep
-	if($("#sidebar").height()<($(window).height()-50)){
+	if($("#sidebar").height()<($(window).height()-120)){
 		$("#topbar").hide();
 	}
 	else{
@@ -66,7 +66,7 @@ $(document).ready(function() {
 
 	});
 	$(window).resize(function(){
-		if($("#sidebar").height()>=($(window).height()-50)){
+		if($("#sidebar").height()>=($(window).height()-120)){
 			if($("#sidebar_collapse").is(":visible")){
 				$("#sidebar").hide();
 				$("#sidebar_collapse").hide();
