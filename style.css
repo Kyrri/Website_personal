@@ -18,6 +18,23 @@ h1, h2{
     font-weight: 300; 
     font-size: 50px;
 }
+.half{
+	width: 55%;
+	vertical-align: top;
+}
+.halfimg{
+	width: 35%;
+	vertical-align: top;
+}
+.third{
+	width: 40%;
+	vertical-align: top;
+}
+.thirdimg{
+	width: 19%;
+	vertical-align: top;
+	height: 30%;
+}
 .to_intro{
 	background-color: rgb(83,82,82);
 	width: 100px;
@@ -69,7 +86,12 @@ h1, h2{
 }
 .content_body{
 	background-color: white;
-	padding: 30px;
+	padding: 30px 128px;
+	height: 100%;
+	display:inline-block;
+}
+.content_body.grey{
+	background-color: transparent;
 }
 .side_bar{
 	background-color: rgb(83,82,82);

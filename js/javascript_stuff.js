@@ -95,6 +95,12 @@ $(document).ready(function() {
 			if($(window).width()>700 && !self_collapsed && self_expanded){
 				self_expanded = false;
 			}
+			// if($(window).width()<700){
+			// 	$(".third").css('float', 'right');
+			// }
+			// else if($(window).width()>700){
+			// 	$(".third").filter(':.left').css('float', 'left');
+			// }
 			if($(window).width()<700 && $('#sidebar_collapse').hasClass("expand") && !self_expanded){
 				$('#sidebar_collapse').trigger("click");
 			}
