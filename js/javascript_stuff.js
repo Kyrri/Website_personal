@@ -14,11 +14,21 @@ $(document).ready(function() {
 	}
 	$("#topbar_dropdown_items").hide();
 	var html = $('html'),
-	        H = html.outerHeight(true),
-	        S = $(window).scrollTop(),
-	        P = S/H;
+        H = html.outerHeight(true),
+        S = $(window).scrollTop(),
+        P = S/H;
 
+	$(".experience_dropdown").hide();
+	$(".project_items").hide();
 	$("#topbar_dropdown_items").css('height', $(window).height()-50);
+	if($(window).width()<900){
+		$(".thirdimg").removeClass("thirdimg").addClass("half_profile");
+		$(".third_filter").removeClass("third").addClass("half_fromthird");
+		$(".right").css("width","85%");
+		$(".half").css("width","100%");
+		$(".half").css("text-align","center");
+		$('table').find('td').unwrap().wrap($('<tr/>'));
+	}
 		 
 	//On User Changing Things
 	$(document).scroll(function(){
@@ -78,10 +88,6 @@ $(document).ready(function() {
 
 	});
 	$(window).resize(function(){
-		H = html.outerHeight(true);
-	    $(window).scrollTop(P*H);
-	    $("#topbar_dropdown_items").css('height', $(window).height()-50);
-
 		if($("#sidebar").height()>=($(window).height()-120)){
 			if($("#sidebar_collapse").is(":visible")){
 				$("#sidebar").hide();
@@ -115,15 +121,20 @@ $(document).ready(function() {
 			if($(window).width()>700 && !self_collapsed && self_expanded){
 				self_expanded = false;
 			}
-			if($(window).width()<900){
+			if($(window).width()<900 && $(".thirdimg")[0]){
 				$(".thirdimg").removeClass("thirdimg").addClass("half_profile");
-				$(".third_filter").removeClass("third").addClass("half");
+				$(".third_filter").removeClass("third").addClass("half_fromthird");
 				$(".right").css("width","85%");
+				$(".half").css("width","100%");
+				$(".half").css("text-align","center");
+				$('table').find('td').unwrap().wrap($('<tr/>'));
 			}
-			else if($(window).width()>900){
+			else if($(window).width()>900 && $(".half_profile")[0]){
 				$(".half_profile").removeClass("half_profile").addClass("thirdimg");
-				$(".third_filter").removeClass("half").addClass("third");
+				$(".third_filter").removeClass("half_fromthird").addClass("third");
 				$(".right").css("width","38%");
+				$(".half").css("width","55%");
+				$(".half").css("text-align","");
 			}
 			if($(window).width()<700 && $('#sidebar_collapse').hasClass("expand") && !self_expanded){
 				$('#sidebar_collapse').trigger("click");
@@ -132,6 +143,9 @@ $(document).ready(function() {
 				$('#sidebar_collapse').trigger("click");
 			}
 		}
+		H = html.outerHeight(true);
+	    $(window).scrollTop(P*H);
+	    $("#topbar_dropdown_items").css('height', $(window).height()-50);
 	});
 	//Sidebar Collapsing
 	$('#sidebar_collapse').on("click", function(e){
@@ -174,7 +188,15 @@ $(document).ready(function() {
 			$(window).scrollTop($(findID).offset().top);
 		}
 	});
-
+	$('.experience_item').on("click",function(e){
+		var newID = '#'+$(this).attr('id')+'_experience';
+		if($(newID).is(':visible')){
+			$(newID).hide();
+		}
+		else{
+			$(newID).show();
+		}
+	});
 	//Hover over Section Title, text change
 	$(function(){
 		var prev;
@@ -218,7 +240,7 @@ $(document).ready(function() {
 			if($(this).filter(':animated').length<1){
 				prev = $(this).text();
 			}
-		 	var newText = "AKA - Stuff I'm Good At";
+		 	var newText = "Stuff I'm Good At";
 			$(this).fadeOut(function(){
 				$(this).text(newText).fadeIn();
 			});

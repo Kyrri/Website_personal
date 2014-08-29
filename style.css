@@ -43,21 +43,35 @@ h3{
 	font-size: 30px;
 	font-weight: 300; 
 }
+h4{
+	font-size: 20px;
+	font-weight: 300;
+}
 a{
 	color: white;
 	text-decoration: none;
 }
 .half{
 	width: 55%;
-	vertical-align: top;
+	vertical-align: middle;
+	display: inline-block;
+	padding: 20px;
+}
+.half_fromthird{
+	width: 55%;
+	vertical-align: middle;
+	display: inline-block;
 }
 .halfimg{
 	width: 35%;
-	vertical-align: top;
+	max-width: 300px;
+	vertical-align: middle;
+	display: inline-block;
 }
 .half_profile{
 	width: 40%;
 	vertical-align: middle;
+	max-width: 300px;
 }
 .third{
 	width: 38%;
@@ -74,6 +88,7 @@ a{
 	width: 20%;
 	vertical-align: middle;
 	height: 20%;
+	max-width: 300px;
 }
 .to_intro{
 	background-color: rgb(83,82,82);
@@ -145,9 +160,13 @@ font-weight: 400;
 }
 .content_body{
 	background-color: white;
-	padding: 30px 128px;
+	width: 100%;
 	height: 100%;
 	display:inline-block;
+	padding-bottom: 35px;
+}
+.body_container{
+	padding: 30px 128px;
 }
 .content_body.grey{
 	background-color: transparent;
@@ -287,7 +306,10 @@ font-weight: 400;
 .contact_table{
 	table-layout:fixed;
 	text-align: left;
-	 word-wrap: break-word;
+	word-wrap: break-word;
+	vertical-align: middle;
+	font-size: 22px;
+	margin: 0 auto;
 }
 .contact_table td{
 	padding: 10px 20px;
@@ -300,4 +322,26 @@ font-weight: 400;
 	cursor: hand;
 	cursor: pointer; 
 	color: rgb(102,204,255);
+}
+.job_date{
+	font-size: 16px;
+	color: rgb(83,82,82);
+}
+.experience_item:hover, .experience_dropdown a:hover, .custom_project:hover{
+	color: rgb(50,145,255);
+	cursor: hand;
+	cursor: pointer; 
+}
+.experience_dropdown a{
+	color: black;
+}
+.experience_dropdown ul{
+	list-style-type: square;
+	text-align: left;
+}
+.project_items{
+	z-index: 9;
+	position: fixed;
+	opacity: 0.90;
+	background-color: rgb(25,24,24);
 }
