@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/javascript_stuff.js"></script>
@@ -10,17 +10,21 @@
 <body>
 
 <!-- Intro -->
-<div class='background'>
+<img class='topArea' src='images/Dad_and_me_Banff.jpg'>
+<div class='topArea_cover'></div>
+<div class='background absolute' id='background'>
 </div>
 <div class='intro'>
-	<!-- Fixed Picture (of me?) with no grey overlay that will be bacground for everything else (two different pics
+	<!-- Fixed Picture (of me?) with no grey overlay that will be background for everything else (two different pics
 	in the same spot, but the title backgrounds look like its the same pic with grey overlay). With Some
 	Intro Text on top -->
 	<div class='intro_container'>
+		<h1> Lindsay Paterson <br> _________________ </h1>
+		<h2> Interactive Resume </h2>
 	</div>
 	<div class='sidebar_item to_intro' id='intro_flip'>
 		<span class='sidebar_item_text'>
-			v
+			<img src='images/down_arrow.png' style='padding-top:25px;'>
 		</span>
 	</div>
 </div>
@@ -62,7 +66,34 @@
 
 <!-- Top Bar -->
 <div class='topbar absolute' id='topbar'>
-----
+	<img src="images/dropdown_icon.png" id='topbar_dropdown'>
+	<div id='topbar_dropdown_items'>
+		<div id='About_topbar' class='topbar_item'>
+			<span class='topbar_item_text'>
+				About
+			</span>
+		</div>
+		<div id='Experiences_topbar' class='topbar_item'>
+			<span class='topbar_item_text'>
+				Experiences
+			</span>
+		</div>
+		<div id='Skills_topbar' class='topbar_item'>
+			<span class='topbar_item_text'>
+				Skills
+			</span>
+		</div>
+		<div id='Interests_topbar' class='topbar_item'>
+			<span class='topbar_item_text'>
+				Interests
+			</span>
+		</div>
+		<div id='Contact_topbar' class='topbar_item'>
+			<span class='topbar_item_text'>
+				Contact
+			</span>
+		</div>
+	</div>
 </div>
 
 <!-- Main Content -->
@@ -72,11 +103,20 @@
 			<h1 id='About_header'>About</h1>
 		</div>
 		<div class='content_body'>
-			 <p style='float:left;' class='third left'> 
-			 	Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text tex
-			 </p>
-			<img src='Classy1.png' class='thirdimg'>
-			<p style='float:right;' class='third right'> Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text </p>
+			 <div style='float:left;' class='third left third_filter'> 
+				<h3> Details </h3>
+			 	<p> <b>Name:</b> <br> Lindsay Paterson </p>
+				<p> <b>Current Location:</b> <br> Ajax, Ontario - Canada</p>
+				<p> <b>Current Occupation: </b><br> Engineering Student with <br> University Braunschweig </p>
+				
+			 </div>
+			<span class='helper'><img src='images/Profile.png' class='thirdimg'></span>
+			<div style='float:right;' class='third right third_filter'> 
+				<h3> Quick Summary </h3>
+				<p>I consider myself a Jack-of-all-Trades. I seek challenges and unique opportunities that keep me learning -
+					a trait that's given me a broad range of skills and experiences. Currently, aside from my studies, 
+					my focus is on improving my Web and Game Development skills.</p>
+			</div>
 		</div>
 	</div>
 
@@ -118,12 +158,13 @@
 		<div class='content_head'>
 			<h1 id='Contact_header'>Contact</h1>
 		</div>
-		<div class='content_body grey' style='color:white; padding-top: 0px;'>
-			<p style='float:left;' class='third left'> 
-			 	Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text tex
-			 </p>
-			<img src='Classy1.png' class='thirdimg'>
-			<p style='float:right;' class='third right'> Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text Text text text text </p>
+		<div class='content_body grey' style='color:white; padding-top: 0px; padding-bottom: 50px;'>
+			<table class='contact_table'> <tr class='contact_table'>
+			 	<td><img class='contact_icon' src='images/linkedin_icon.png'></td><td><a href='http://www.linkedin.com/in/lindsaypaterson'> Linked In </a></td>
+				<td><img  src='images/email_icon.png'></td><td><a href='mailto:lindsaymrjpaterson@gmail.com'> lindsaymrjpaterson@gmail.com </a> </td></tr>
+				<tr><td><img class='contact_icon'src='images/phone_icon.png'></td><td> (905)550-9179 </td>
+				<td><img class='contact_icon'src='images/skype_icon.png'></td><td> linzey101 </td></tr>
+			</table>
 		</div>
 	</div>
 </div>
