@@ -1,15 +1,15 @@
 var self_collapsed = false;
 var self_expanded = false;
+var lockedScroll_position = [];
 
 $(document).ready(function() {
 	//On Load Prep
 	if($("#sidebar").height()<($(window).height()-120)){
-		$("#topbar").hide();
+		$("#sidebar").show();
+		$("#sidebar_collapse").show();
 	}
 	else{
-
-		$("#sidebar").hide();
-		$("#sidebar_collapse").hide();
+		$("#topbar").show();
 		$("#About_header").css("padding-top", "50px");
 	}
 	$("#topbar_dropdown_items").hide();
@@ -19,6 +19,7 @@ $(document).ready(function() {
         P = S/H;
 
 	$(".experience_dropdown").hide();
+	$(".interest_dropdown").hide();
 	$(".project_items").hide();
 	$("#topbar_dropdown_items").css('height', $(window).height()-50);
 	if($(window).width()<900){
@@ -138,9 +139,11 @@ $(document).ready(function() {
 			}
 			if($(window).width()<700 && $('#sidebar_collapse').hasClass("expand") && !self_expanded){
 				$('#sidebar_collapse').trigger("click");
+				$(".body_container").css("padding","30px");
 			}
 			else if($(window).width()>700 && $('#sidebar_collapse').hasClass("collapse") && !self_collapsed){
 				$('#sidebar_collapse').trigger("click");
+				$(".body_container").css("padding","30px 128px");
 			}
 		}
 		H = html.outerHeight(true);
@@ -196,6 +199,51 @@ $(document).ready(function() {
 		else{
 			$(newID).show();
 		}
+	});
+	$('.skill_item').on("click",function(e){
+		var newID = '#'+$(this).attr('id')+'_skill';
+		if($(newID).is(':visible')){
+			$(newID).hide();
+		}
+		else{
+			$(newID).show();
+		}
+	});
+	$('.interest_item').on("click",function(e){
+		var newID = '#'+$(this).attr('id')+'_interest';
+		if($(newID).is(':visible')){
+			$(newID).hide();
+		}
+		else{
+			$(newID).show();
+		}
+	});
+	$('.custom_project').on("click",function(e){
+		var newID = '#'+$(this).attr('id')+'_project';
+		lockedScroll_position =[
+			$(document).scrollLeft(),
+	        $(document).scrollTop()
+		];
+		var html = $('html'); // it would make more sense to apply this to body, but IE7 won't have that
+        html.data('previous-overflow', html.css('overflow'));
+        html.css('overflow', 'hidden');
+        window.scrollTo(lockedScroll_position[0], lockedScroll_position[1]);
+        $(newID).show("slide");
+  
+	    $(".carousel").jCarouselLite({
+	        btnNext: ".next",
+	        btnPrev: ".prev",
+	        visible: ~~(($(window).width()-100)/200)
+	    });
+	});
+	$('.close_window').on("click",function(e){
+		var html = $('html');
+        html.css('overflow', html.data('previous-overflow'));
+        window.scrollTo(lockedScroll_position[0], lockedScroll_position[1])
+		$('.this_project').hide("slide");
+	});
+	$('.back_to_top').on("click",function(e){
+        $('.this_project').animate({ scrollTop: 0 }, "slow");;
 	});
 	//Hover over Section Title, text change
 	$(function(){

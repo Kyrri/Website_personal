@@ -22,6 +22,9 @@
 	width: 100vw;
 	top: 0px;
 }
+li{
+	padding: 3px 0px;
+}
 body{
 	padding: 0;
     margin: 0;
@@ -30,6 +33,7 @@ body{
     font-style: normal;
     font-size: 18px;
     cursor: default;
+    border: 1px solid transparent;
 }
 h1{
     font-size: 50px;
@@ -145,6 +149,9 @@ font-weight: 400;
 }
 .blue{
 	color: rgb(50,145,255);
+}
+.white{
+	color: rgb(255,255,255);
 }
 .grey{
 	background-color: transparent;
@@ -327,21 +334,82 @@ font-weight: 400;
 	font-size: 16px;
 	color: rgb(83,82,82);
 }
-.experience_item:hover, .experience_dropdown a:hover, .custom_project:hover{
+.experience_item:hover, .experience_dropdown a:hover, .custom_project:hover, .close_window:hover, .back_to_top.experience:hover{
 	color: rgb(50,145,255);
 	cursor: hand;
 	cursor: pointer; 
 }
-.experience_dropdown a{
+.experience_dropdown a, .skill_dropdown a, .interest_dropdown a{
 	color: black;
 }
-.experience_dropdown ul{
+.experience_dropdown ul, .interest_dropdown ul{
+	display: inline-block;
+	margin: 0 auto;
 	list-style-type: square;
 	text-align: left;
+	margin-bottom: 15px;
+    margin-right: 10px;
+	vertical-align:top;
+	list-style-position: inside;
 }
-.project_items{
+.interest_item:hover{
+	color: rgb(73,243,54);
+	cursor: hand;
+	cursor: pointer; 
+}
+.skill_item,{
+	margin-bottom: 15px;
+}
+.skill_dropdown ul{
+	vertical-align:top;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: right;
+	list-style-type: square;
+	list-style-position: inside;
+	margin:0;
+    padding:0;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+.skill_item:hover{
+	color: rgb(255,59,63);
+	cursor: hand;
+	cursor: pointer; 
+}
+.custom_project{
+	padding: 8px 0px;
+}
+.this_project{
 	z-index: 9;
-	position: fixed;
-	opacity: 0.90;
+	width: 100vw;
+	height: 100vh;
+	top:0;
+	left:0;
+	opacity: 0.95;
 	background-color: rgb(25,24,24);
+	overflow-y: auto;
 }
+.project_content{
+	opacity: 1;
+	color: white;
+	width: 85vw;
+	height: 85vh;
+	margin: 0 auto;
+	padding: 25px 50px;
+}
+.close_window{
+	position: fixed;
+	background-color: rgb(25,24,24);
+	padding: 0px 10px;
+}
+.project_text{
+	padding-top: 50px;
+	text-align: center;
+}
+.carousel li{
+	padding: 2px;
+	border: 1px solid gray;
+}
+
+
