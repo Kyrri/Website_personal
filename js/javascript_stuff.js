@@ -176,6 +176,18 @@ $(document).ready(function() {
 		}
 	});
 	// Route Section Links
+	$('#topbar_dropdown').on("click", function(e){
+		if($("#topbar_dropdown_items").is(":visible")){
+			if(($("#intro_flip").position().top+70) > $(window).scrollTop()){
+				$("#topbar").removeClass('fixed').addClass('absolute');
+			}
+			$("#topbar_dropdown_items").hide();
+		} 
+		else{
+			$("#topbar").removeClass('absolute').addClass('fixed');
+			$("#topbar_dropdown_items").show();
+		}
+	});
 	$('.topbar_item').on("click", function(e){
 		var findID = "#"+$(this).attr('id').replace('_topbar','');
 		$("#topbar_dropdown_items").hide();
@@ -339,16 +351,4 @@ $(document).ready(function() {
 	     	});
 		});
 	})
-	$('#topbar_dropdown').on("click", function(e){
-		if($("#topbar_dropdown_items").is(":visible")){
-			if(($("#intro_flip").position().top+70) > $(window).scrollTop()){
-				$("#topbar").removeClass('fixed').addClass('absolute');
-			}
-			$("#topbar_dropdown_items").hide();
-		} 
-		else{
-			$("#topbar").removeClass('absolute').addClass('fixed');
-			$("#topbar_dropdown_items").show();
-		}
-	});
 });

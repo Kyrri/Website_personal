@@ -29,6 +29,7 @@ h2, h3{
 	color: white;
 	background-color: rgb(83,82,82);
 	text-align: center;
+	display: hidden;
 }
 .topbar img{
 	float:right;
@@ -46,9 +47,8 @@ h2, h3{
 	vertical-align: middle;
 }
 #topbar_dropdown_items{
-	display: none;
 	background-color: rgb(83,82,82);
-	/*display: table;*/
+	display: table;
 	height: 100%;
 	width: 100%;
 	text-align: center;
@@ -124,4 +124,8 @@ h2, h3{
 .contact_icon{
 	height: 30px;
 	width: 30px;
+}
+.job_date{
+	font-size: 12px;
+	color: rgb(83,82,82);
 }
