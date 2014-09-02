@@ -1,74 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'> -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+	<link media="only screen and (max-device-width: 480px)" rel="stylesheet" type="text/css" href="style_iphone.css">
+	<meta name="viewport" content="user-scalable=no, width=device-width" />
 	<script src="js/jquery.js"></script>
-	<script src="js/carousel.js"></script>
-	<script src="js/javascript_stuff.js"></script>
 
 </head>
 <body>
 
-<!-- Intro -->
-<img class='topArea' src='images/Dad_and_me_Banff.jpg'>
-<div class='topArea_cover'></div>
-<div class='background absolute' id='background'>
-</div>
-
-<div class='intro'>
-	<!-- Fixed Picture (of me?) with no grey overlay that will be background for everything else (two different pics
-	in the same spot, but the title backgrounds look like its the same pic with grey overlay). With Some
-	Intro Text on top -->
-	<div class='intro_container'>
-		<h1> Lindsay Paterson <br> _________________ </h1>
-		<h2> Interactive Resume </h2>
-	</div>
-	<div class='sidebar_item to_intro' id='intro_flip'>
-		<span class='sidebar_item_text'>
-			<img src='images/down_arrow.png' style='padding-top:25px;'>
-		</span>
-	</div>
-</div>
-
-<!-- Side Bar -->
-<div class='sidebar_collapse absolute expand' style='display:none;' id='sidebar_collapse'>
-	<span>
-		<
-	</span>
-</div>
-<div class='side_bar absolute' style='display:none;' id='sidebar'>
-	<!-- if width less than certain amount, pre-collapsed?-->
-	<div class='sidebar_item' id='About_sidebar'>
-		<span class='sidebar_item_text'>
-			About
-		</span>
-	</div>
-	<div class='sidebar_item' id='Experiences_sidebar'>
-		<span class='sidebar_item_text'>
-			Experiences
-		</span>
-	</div>
-	<div class='sidebar_item' id='Skills_sidebar'>
-		<span class='sidebar_item_text'>
-			Skills
-		</span>
-	</div>
-	<div class='sidebar_item' id='Interests_sidebar'>
-		<span class='sidebar_item_text'>
-			Interests
-		</span>
-	</div>
-	<div class='sidebar_item' id='Contact_sidebar'>
-		<span class='sidebar_item_text'>
-			Contact
-		</span>
-	</div>
-</div>
-
 <!-- Top Bar -->
-<div class='topbar absolute'  style='display:none;'id='topbar'>
+<div class='topbar fixed' id='topbar'>
 	<img src="images/dropdown_icon.png" id='topbar_dropdown'>
+	<h2> Lindsay Paterson </h2>
 	<div id='topbar_dropdown_items'>
 		<div id='About_topbar' class='topbar_item'>
 			<span class='topbar_item_text'>
@@ -97,50 +41,6 @@
 		</div>
 	</div>
 </div>
-<!-- Experience Projects -->
-<div class='this_project fixed' id='dogchair_project' style='display:none'>
-	<div class='project_content'>
-		<div class='close_window'>
-			<h4> < Go Back </h4>
-		</div>
-		<div class='project_text'>
-			<h3 class='blue'> Custom Dog Wheelchair <br/><span class='white' style='font-size: 20px;'> July 22 - August 3, 2014 | Whitby, ON </span></h3>
-			<h3>Pictures</h3>
-			<button class="prev"><<</button>
-			<button class="next">>></button>
-			<div class='carousel'>
-				<ul>
-					<li><img src='images/Projects/DogeMobile/Diagram.jpg' width="200" height="150"></li>
-					<li><img src='images/Projects/DogeMobile/IMG_3906.jpg' width="200" height="150"></li>
-					<li><img src='images/Projects/DogeMobile/IMG_3908.jpg' width="200" height="150"></li>
-					<li><img src='images/Projects/DogeMobile/IMG_3912.JPG' width="200" height="150"></li>
-					<li><img src='images/Projects/DogeMobile/IMG_3913.jpg' width="200" height="150"></li>
-					<li><img src='images/Projects/DogeMobile/IMG_3914.PNG' width="200" height="150"></li>
-				</ul>
-			</div>
-			<h3>Backstory</h3>
-			<p style='text-align: left;'> A family friend, Katherine Craine, is the proud owner of the Boston Terrier, Lily (featured in the pictures above). Lily was born with dwarfism; and as a result, over time she has begun to suffer worse and worse hip and leg displacement. Lily, who's greatest joy is playing fetch for hours on end, was soon unable to walk for more than short bursts. Wishing her dog to walk again, seeing that other options (dog wheelchairs already exist, but not ones for dogs this small and light) were unavailable, Katherine came to me for help. </p>
-			<h3>Problem</h3>
-			<p style='text-align: left;'> The problem with Lily was unique to other dog wheelchair designs; Lily weighs 7lbs and is less than a foot long. A wheelchair for a larger dog can be quite heavy, but for Lily, the chair would have to be precisely sized to her body, and light enough for her to pull without expending too much effort. Luckily, Boston Terriers are known for having strong, powerful chests, and provide most of their strength and movement through their chests and front legs. It was also important to take into account that Lily was not entirely paralyzed in her back end; she was still capable of moving her back legs, potentially squirming out of the chair, and may feel uncomfortable or pained if the chair wasn't fitted quite right. </p>
-			<h3>Solution</h3>
-			<div style='text-align: left;'>
-			<p><b> Making the Frame </b><p>
-				<p>In order to have a lightweight frame, 3/4inch PVC pipe was used; although PVC pipe under 1inch is usually not strong enough to support a frame like this, the tiny size of each of the PVC pieces - the longest piece was 6.5inches long - removed the concern that the PVC would bend and become unstable, or even break, in the middle of the pieces where it recieves the most force. The PVC pipe was then painted in order to protect it from UV rays from the sun - UV degrades exposed PVC quite quickly. Red was used as the main colour on request.</p>
-			<p><b>Connecting the Frame</b></p>
-				<p>The frame was connected using PVC pipe corners and pipe glue; due to the small size the frame; the extra supporting PVC frame piece, viewable in the technical diagram as the 45 degree angled piece connecting the wheel to the frame, was unecessary; the frame was very sturdy, and this piece would only add more weight.</p>
-			<p><b>Attaching the Frame to the Dog</b></p> 
-				<p>Since the building of the wheelchair had to take place without Lily avaliable, and to make it easier for the owners to use, adjustable straps were implemented to strap the frame comfortably around her body. The straps eased most of the weight and force required to move the chair on Lily's powerful chest and shoulders, removing the weight and stress from her weaker hips and back legs. These straps were made out of large dog collars; already adjustable and sturdy with buckles to easily clip and unclip Lily from the wheelchair, these seemed like the perfect choice.</p>
-			<p><b>Wheels</b></P>
-				<p>The wheels had to be very lightweight and easy to pull; which is harder to find than one might expect. Ultimately, my dad was lucky enough to find a small pullcart at Goodwill; the thin, plastic wheels on this cart were perfect for Lily. They were attached to the frame using a home-made swivel mechanism made of short bolts, a nut to hold it in place, and some washers to add a buffer between the frame and the wheel, so they would not rub.</p>
-			<p><b>Supporting the Legs </b></p>
-				<p>Arguably the most difficult portion of this project was supporting Lily's back legs and hips, given that she can still feel in her hindquarters and move her legs. Initially, the straps supported her legs above the ground with a padded underbelly support on elastics; but after trial, this appeared to make Lily uncomfortable because her back legs were too restricted. She also had some trouble balancing. The straps were adjusted to sit across the front of her thighs, and were lengthened so her feet touched the ground. What this achieved is that Lily no longer held any of her weight with her back legs and hips, but she was comfortable and well balanced. The position was much more natural for her this way. The straps were made of a spandex-like cloth several layers thick wrapped around a thick banded elastic. This provided a bit of flexibility for Lily to move her legs if she so wished, while being comfortable on her back thighs.</p>
-			</div>
-			<h3>Results</h3>
-			<p style='text-align: left;'>After a weekend of design, careful measurements, hard work, and much trial and error, a working version of Lily's chair was built. After solidifying the stitches on the leg supports and ensuring the structural integrity of the frame, the chair was delivered, and Lily has been happily mobile to this day. See the pictures above to see the design, progress, and the final prototype as well as the finished product in action!</p>
-			<h3 class='back_to_top experience'>Back to Top</h3>
-		</div>
-	</div>
-</div>
 
 <!-- Main Content -->
 <div class='main_container'>
@@ -150,16 +50,15 @@
 		</div>
 		<div class='content_body'>
 			<div class='body_container'>
-				 <div style='float:left;' class='third left third_filter'> 
-					<h3> Details </h3>
+				 <div class='half'> 
+					<h2> Details </h2>
 				 	<p> <b>Name/Age:</b> <br> Lindsay Paterson - 21</p>
 					<p> <b>Current Location:</b> <br> Ajax, Ontario - Canada</p>
 					<p> <b>Current Occupation: </b><br> Engineering Student with <br> University Braunschweig </p>
 					
 				 </div>
-				<span class='helper'><img src='images/Profile.png' class='thirdimg'></span>
-				<div style='float:right;' class='third right third_filter'> 
-					<h3> Quick Summary </h3>
+				<div class='half'> 
+					<h2> Quick Summary </h2>
 					<p>I consider myself a Jack-of-all-Trades. I seek challenges and unique opportunities that keep me learning -
 						a trait that's given me a broad range of skills and experiences. Currently, aside from my studies, 
 						my focus is on improving my Web and Game Development skills.</p>
@@ -175,8 +74,7 @@
 		</div>
 		<div class='content_body'>
 			<div class='body_container'>
-				<img src='images/Experiences.png' class='halfimg'>
-				<div class='half right'> 
+				<div class='half'> 
 					<p class='experience_item' id='EXOU'><b>Software Developer </b>- EXO U inc. <br/> <span class='job_date'>May 2014 - August 2014 | Montreal, QC</span></p>
 					<div id='EXOU_experience' class='experience_dropdown'>
 						<a target="_blank" href='http://www.exou.com/'>www.exou.com</a>
@@ -258,7 +156,7 @@
 
 		<div class='content_body'>
 			<div class='body_container'>
-				<div dir='rtl' class='half left'>
+				<div  class='half'>
 					<h3 id='TECHNICAL' class='skill_item'> Technical </h3>
 					<div id='TECHNICAL_skill' class='skill_dropdown'>
 						<ul><b>Professional Experience</b>
@@ -291,7 +189,6 @@
 						</ul>
 					</div>
 				</div>
-				<img src='images/Skills.png' class='halfimg'>
 			</div>
 		</div>
 	</div>
@@ -302,10 +199,9 @@
 		</div>
 		<div class='content_body'>
 			<div class='body_container'>
-				<img src='images/Interests.png' class='halfimg'>
 
-				<div class='half right'> 
-					<p class='interest_item' id='ART'><b> Art </b> <br/> <span class='job_date'>I love working with art in all medias and any canvas I can get my hands on. Portfolio collection coming soon!</span></p>
+				<div class='half '> 
+					<p class='interest_item' id='ART'><b> Art </b> <br/> <span class='job_date'>I love working with art in all medias and any canvas I can get my hands on. Check out my desktop site for my portfolio collection!</span></p>
 					<p class='interest_item' id='GAME'><b> Video Games </b> <br/> <span class='job_date'>Been a Life-long Gamer - check out what I'm playing and my all-time favourites</span></p>
 					<div id='GAME_interest' class='interest_dropdown'>
 							<ul><b>Currently Playing</b>

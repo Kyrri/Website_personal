@@ -18,6 +18,7 @@ $(document).ready(function() {
         S = $(window).scrollTop(),
         P = S/H;
 
+    $(".topArea").show();
 	$(".experience_dropdown").hide();
 	$(".interest_dropdown").hide();
 	$(".project_items").hide();
@@ -29,7 +30,7 @@ $(document).ready(function() {
 		$(".half").css("width","100%");
 		$(".half").css("text-align","center");
 		$('table').find('td').unwrap().wrap($('<tr/>'));
-	}
+	}		
 		 
 	//On User Changing Things
 	$(document).scroll(function(){
@@ -228,19 +229,24 @@ $(document).ready(function() {
         html.data('previous-overflow', html.css('overflow'));
         html.css('overflow', 'hidden');
         window.scrollTo(lockedScroll_position[0], lockedScroll_position[1]);
-        $(newID).show("slide");
+        $(newID).show("slide", function(){
+        	$(newID).children().fadeIn(function(){
+        		  $(".carousel").jCarouselLite({
+			        btnNext: ".next",
+			        btnPrev: ".prev",
+			        visible: ~~(($(window).width()-100)/200)
+			    });
+        	});
+        });
   
-	    $(".carousel").jCarouselLite({
-	        btnNext: ".next",
-	        btnPrev: ".prev",
-	        visible: ~~(($(window).width()-100)/200)
-	    });
 	});
 	$('.close_window').on("click",function(e){
 		var html = $('html');
         html.css('overflow', html.data('previous-overflow'));
-        window.scrollTo(lockedScroll_position[0], lockedScroll_position[1])
-		$('.this_project').hide("slide");
+        window.scrollTo(lockedScroll_position[0], lockedScroll_position[1]);
+        $('.this_project').children().fadeOut(function(){
+        	$('.this_project').hide("slide");
+        });
 	});
 	$('.back_to_top').on("click",function(e){
         $('.this_project').animate({ scrollTop: 0 }, "slow");;

@@ -33,11 +33,11 @@ body{
     font-style: normal;
     font-size: 18px;
     cursor: default;
-    border: 1px solid transparent;
+    overflow-x: hidden;
 }
 h1{
     font-size: 50px;
-    font-weight: 300; 
+    margin: 15px;
 }
 h2{
 	font-size: 40px;
@@ -81,11 +81,6 @@ a{
 	width: 38%;
 	vertical-align: top;
 	display: inline-block;
-}
-.helper {
-    /*display: inline-block;*/
-    height: 100%;
-    vertical-align: middle;
 }
 .thirdimg{
 	/*display: inline-block;*/
@@ -179,6 +174,7 @@ font-weight: 400;
 	background-color: transparent;
 }
 .side_bar{
+	display:none;
 	background-color: rgb(83,82,82);
 	-webkit-border-bottom-right-radius: 25px;
 	-webkit-border-bottom-left-radius: 25px;
@@ -224,6 +220,7 @@ font-weight: 400;
 	border-bottom-left-radius: 25px;
 }
 .topbar{
+	display:none;
 	height: 50px;
 	border-bottom: 1px solid gray;
 	width: 100%;
@@ -389,6 +386,7 @@ font-weight: 400;
 	opacity: 0.95;
 	background-color: rgb(25,24,24);
 	overflow-y: auto;
+	border: 1px solid transparent;
 }
 .project_content{
 	opacity: 1;
@@ -397,6 +395,7 @@ font-weight: 400;
 	height: 85vh;
 	margin: 0 auto;
 	padding: 25px 50px;
+	display: none;
 }
 .close_window{
 	position: fixed;
@@ -411,5 +410,7 @@ font-weight: 400;
 	padding: 2px;
 	border: 1px solid gray;
 }
-
+.carousel{
+	visibility: hidden;
+}
 
