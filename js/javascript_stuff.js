@@ -33,6 +33,9 @@ $(document).ready(function() {
 	}		
 		 
 	//On User Changing Things
+	$('.to_intro').on("click", function(e){
+		$(window).scrollTop($('#About').offset().top);
+	});
 	$(document).scroll(function(){
 		S = $(window).scrollTop();
 	    P = S/H;
@@ -231,7 +234,7 @@ $(document).ready(function() {
 			$(newID).show();
 		}
 	});
-	$('.custom_project').on("click",function(e){
+	$('.custom_project, .custom_interest').on("click",function(e){
 		var newID = '#'+$(this).attr('id')+'_project';
 		lockedScroll_position =[
 			$(document).scrollLeft(),
@@ -263,6 +266,97 @@ $(document).ready(function() {
 	$('.back_to_top').on("click",function(e){
         $('.this_project').animate({ scrollTop: 0 }, "slow");;
 	});
+	//Map Hover Text
+
+	   $(window).load(function () {
+
+
+        var a = document.getElementById("map");
+        var svgDoc = a.contentDocument; 
+        var temp = svgDoc.getElementById("us") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("United States | Frequent Visits")
+        });
+        var temp = svgDoc.getElementById("cu") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Cuba | May 2015")
+        });
+        var temp = svgDoc.getElementById("gb") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("England | February 2015")
+        });
+        var temp = svgDoc.getElementById("it") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Italy | November 2014 & April 2015")
+        });
+        var temp = svgDoc.getElementById("vg") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("British Virgin Isles | November 2009")
+        });
+        var temp = svgDoc.getElementById("be") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Belgium | May 2010")
+        });
+        var temp = svgDoc.getElementById("mx") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Mexico, Grand Caymen, American & British Virgin Isles | March 2001 & 2009")
+        });
+        var temp = svgDoc.getElementById("dk") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Denmark | January 2015");
+        });
+        var temp = svgDoc.getElementById("se") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Sweden | January 2015");
+        });
+        var temp = svgDoc.getElementById("nl") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Netherlands | May 2010 & September 2014");
+        });
+        var temp = svgDoc.getElementById("ie") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Ireland | May 2014");
+        });
+        var temp = svgDoc.getElementById("ca") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Canada | Homeland");
+        });
+        var temp = svgDoc.getElementById("ai") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Anguilla | March 2001");
+        });
+        var temp = svgDoc.getElementById("de") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Germany | Currently Residing");
+        });
+        var temp = svgDoc.getElementById("bz") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Belize | March 2001");
+        });
+        var temp = svgDoc.getElementById("fr") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("France | May 2010");
+        });
+        var temp = svgDoc.getElementById("ch") ; 
+        $(temp).hover( function(){
+        	$("#country_name").text("Switzerland | November 2014");
+        });
+        
+    });
+	//Hover on Art Pic
+	$('.landscape, .portrait').click( function(){
+        	var img = $(this).attr("src");
+        	var element = document.createElement('img');
+        	if($("#art").has("img")){
+        		$("#art").empty();
+        	}
+       	    $(element).addClass("big").attr("src", img)
+        	.appendTo($("#art")).click(function(){
+        		$(this).remove();
+    		});
+       	    
+    });
+
 	//Hover over Section Title, text change
 	$(function(){
 		var prev;

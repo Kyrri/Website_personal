@@ -406,6 +406,33 @@ font-weight: 400;
 	padding-top: 50px;
 	text-align: center;
 }
+.portrait, .landscape{
+	display: inline-block;
+	height: 100%;
+	vertical-align: center;
+	padding: 10px;
+	border: 1px solid white;
+}
+.big{
+	z-index: 15;
+	text-align: center;
+	position: fixed;
+	top: 7%;
+	left: 7%;
+	margin: 0 auto;
+	max-width: 85%;
+	max-height: 85%;
+	border: 3px solid white;
+}
+.country_name{
+	z-index:10;
+	margin-bottom: 5px;
+	text-align: center;
+	padding-top: 5px;
+	font: white;
+	position: relative;
+	font-size: 25px;
+}
 .carousel li{
 	padding: 2px;
 	border: 1px solid gray;
@@ -413,4 +440,5 @@ font-weight: 400;
 .carousel{
 	visibility: hidden;
 }
+
 

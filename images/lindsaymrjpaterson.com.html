@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	<script>
+		if(screen.width <= 480){
+		    document.location = "index_mobile.html";
+		}
+	</script>
+
+	<link href="lindsaymrjpaterson.com_files/css.css" rel="stylesheet" type="text/css">
+	<link media="only screen and (min-device-width: 481px)" rel="stylesheet" type="text/css" href="lindsaymrjpaterson.com_files/style.css">
+	<script src="lindsaymrjpaterson.com_files/jquery.js"></script>
+	<script src="lindsaymrjpaterson.com_files/carousel.js"></script>
+	<script type="text/javascript" src="lindsaymrjpaterson.com_files/javascript_stuff.js"></script>
+
+</head>
+<body>
+
+<!-- Intro -->
+<div class="topArea"><img class="topArea" style="" src="lindsaymrjpaterson.com_files/Dad_and_me_Banff.jpg"></div>
+<div class="topArea_cover"></div>
+<div class="background fixed" id="background">
+</div>
+
+<div class="intro">
+	<!-- Fixed Picture (of me?) with no grey overlay that will be background for everything else (two different pics
+	in the same spot, but the title backgrounds look like its the same pic with grey overlay). With Some
+	Intro Text on top -->
+	<div class="intro_container">
+		<h1> Lindsay Paterson <br> _________________ </h1>
+		<h2> Interactive Resume </h2>
+	</div>
+	<div class="sidebar_item to_intro" id="intro_flip">
+		<span class="sidebar_item_text">
+			<img src="lindsaymrjpaterson.com_files/down_arrow.png" style="padding-top:25px;">
+		</span>
+	</div>
+</div>
+
+<!-- Side Bar -->
+<div class="sidebar_collapse expand fixed" style="" id="sidebar_collapse">
+	<span>
+		&lt;
+	</span>
+</div>
+<div style="display: block;" class="side_bar fixed" id="sidebar">
+	<!-- if width less than certain amount, pre-collapsed?-->
+	<div class="sidebar_item" id="About_sidebar">
+		<span class="sidebar_item_text">
+			About
+		</span>
+	</div>
+	<div class="sidebar_item" id="Experiences_sidebar">
+		<span class="sidebar_item_text">
+			Experiences
+		</span>
+	</div>
+	<div class="sidebar_item current" id="Skills_sidebar">
+		<span class="sidebar_item_text">
+			Skills
+		</span>
+	</div>
+	<div class="sidebar_item" id="Interests_sidebar">
+		<span class="sidebar_item_text">
+			Interests
+		</span>
+	</div>
+	<div class="sidebar_item" id="Contact_sidebar">
+		<span class="sidebar_item_text">
+			Contact
+		</span>
+	</div>
+</div>
+
+<!-- Top Bar -->
+<div class="topbar fixed" id="topbar">
+	<img src="lindsaymrjpaterson.com_files/dropdown_icon.png" id="topbar_dropdown">
+	<div style="display: none; height: 692px;" id="topbar_dropdown_items">
+		<div id="About_topbar" class="topbar_item">
+			<span class="topbar_item_text">
+				About
+			</span>
+		</div>
+		<div id="Experiences_topbar" class="topbar_item">
+			<span class="topbar_item_text">
+				Experiences
+			</span>
+		</div>
+		<div id="Skills_topbar" class="topbar_item">
+			<span class="topbar_item_text">
+				Skills
+			</span>
+		</div>
+		<div id="Interests_topbar" class="topbar_item">
+			<span class="topbar_item_text">
+				Interests
+			</span>
+		</div>
+		<div id="Contact_topbar" class="topbar_item">
+			<span class="topbar_item_text">
+				Contact
+			</span>
+		</div>
+	</div>
+</div>
+<!-- Experience Projects -->
+<div class="this_project fixed" id="dogchair_project" style="display:none">
+	<div class="project_content">
+		<div class="close_window">
+			<h4> &lt; Go Back </h4>
+		</div>
+		<div class="project_text">
+			<h3 class="blue"> Custom Dog Wheelchair <br><span class="white" style="font-size: 20px;"> July 22 - August 3, 2014 | Whitby, ON </span></h3>
+			<h3>Pictures</h3>
+			<button class="prev">&lt;&lt;</button>
+			<button class="next">&gt;&gt;</button>
+			<div class="carousel">
+				<ul>
+					<li><img src="lindsaymrjpaterson.com_files/Diagram.jpg" height="150" width="200"></li>
+					<li><img src="lindsaymrjpaterson.com_files/IMG_3906.jpg" height="150" width="200"></li>
+					<li><img src="lindsaymrjpaterson.com_files/IMG_3908.jpg" height="150" width="200"></li>
+					<li><img src="lindsaymrjpaterson.com_files/IMG_3912.JPG" height="150" width="200"></li>
+					<li><img src="lindsaymrjpaterson.com_files/IMG_3913.jpg" height="150" width="200"></li>
+					<li><img src="lindsaymrjpaterson.com_files/IMG_3914.PNG" height="150" width="200"></li>
+				</ul>
+			</div>
+			<h3>Backstory</h3>
+			<p style="text-align: left;"> A family friend, Katherine Craine, is 
+the proud owner of the Boston Terrier, Lily (featured in the pictures 
+above). Lily was born with dwarfism; and as a result, over time she has 
+begun to suffer worse and worse hip and leg displacement. Lily, who's 
+greatest joy is playing fetch for hours on end, was soon unable to walk 
+for more than short bursts. Wishing her dog to walk again, seeing that 
+other options (dog wheelchairs already exist, but not ones for dogs this
+ small and light) were unavailable, Katherine came to me for help. </p>
+			<h3>Problem</h3>
+			<p style="text-align: left;"> The problem with Lily was unique to 
+other dog wheelchair designs; Lily weighs 7lbs and is less than a foot 
+long. A wheelchair for a larger dog can be quite heavy, but for Lily, 
+the chair would have to be precisely sized to her body, and light enough
+ for her to pull without expending too much effort. Luckily, Boston 
+Terriers are known for having strong, powerful chests, and provide most 
+of their strength and movement through their chests and front legs. It 
+was also important to take into account that Lily was not entirely 
+paralyzed in her back end; she was still capable of moving her back 
+legs, potentially squirming out of the chair, and may feel uncomfortable
+ or pained if the chair wasn't fitted quite right. </p>
+			<h3>Solution</h3>
+			<div style="text-align: left;">
+			<p><b> Making the Frame </b></p><p>
+				</p><p>In order to have a lightweight frame, 3/4inch PVC pipe was 
+used; although PVC pipe under 1inch is usually not strong enough to 
+support a frame like this, the tiny size of each of the PVC pieces - the
+ longest piece was 6.5inches long - removed the concern that the PVC 
+would bend and become unstable, or even break, in the middle of the 
+pieces where it recieves the most force. The PVC pipe was then painted 
+in order to protect it from UV rays from the sun - UV degrades exposed 
+PVC quite quickly. Red was used as the main colour on request.</p>
+			<p><b>Connecting the Frame</b></p>
+				<p>The frame was connected using PVC pipe corners and pipe glue; due
+ to the small size the frame; the extra supporting PVC frame piece, 
+viewable in the technical diagram as the 45 degree angled piece 
+connecting the wheel to the frame, was unecessary; the frame was very 
+sturdy, and this piece would only add more weight.</p>
+			<p><b>Attaching the Frame to the Dog</b></p> 
+				<p>Since the building of the wheelchair had to take place without 
+Lily avaliable, and to make it easier for the owners to use, adjustable 
+straps were implemented to strap the frame comfortably around her body. 
+The straps eased most of the weight and force required to move the chair
+ on Lily's powerful chest and shoulders, removing the weight and stress 
+from her weaker hips and back legs. These straps were made out of large 
+dog collars; already adjustable and sturdy with buckles to easily clip 
+and unclip Lily from the wheelchair, these seemed like the perfect 
+choice.</p>
+			<p><b>Wheels</b></p>
+				<p>The wheels had to be very lightweight and easy to pull; which is 
+harder to find than one might expect. Ultimately, my dad was lucky 
+enough to find a small pullcart at Goodwill; the thin, plastic wheels on
+ this cart were perfect for Lily. They were attached to the frame using a
+ home-made swivel mechanism made of short bolts, a nut to hold it in 
+place, and some washers to add a buffer between the frame and the wheel,
+ so they would not rub.</p>
+			<p><b>Supporting the Legs </b></p>
+				<p>Arguably the most difficult portion of this project was 
+supporting Lily's back legs and hips, given that she can still feel in 
+her hindquarters and move her legs. Initially, the straps supported her 
+legs above the ground with a padded underbelly support on elastics; but 
+after trial, this appeared to make Lily uncomfortable because her back 
+legs were too restricted. She also had some trouble balancing. The 
+straps were adjusted to sit across the front of her thighs, and were 
+lengthened so her feet touched the ground. What this achieved is that 
+Lily no longer held any of her weight with her back legs and hips, but 
+she was comfortable and well balanced. The position was much more 
+natural for her this way. The straps were made of a spandex-like cloth 
+several layers thick wrapped around a thick banded elastic. This 
+provided a bit of flexibility for Lily to move her legs if she so 
+wished, while being comfortable on her back thighs.</p>
+			</div>
+			<h3>Results</h3>
+			<p style="text-align: left;">After a weekend of design, careful 
+measurements, hard work, and much trial and error, a working version of 
+Lily's chair was built. After solidifying the stitches on the leg 
+supports and ensuring the structural integrity of the frame, the chair 
+was delivered, and Lily has been happily mobile to this day. See the 
+pictures above to see the design, progress, and the final prototype as 
+well as the finished product in action!</p>
+			<h3 class="back_to_top experience">Back to Top</h3>
+		</div>
+	</div>
+</div>
+
+<!-- Main Content -->
+<div class="main_container">
+	<div class="content_section" id="About">
+		<div class="content_head grey yellow">
+			<h1 id="About_header">About</h1>
+		</div>
+		<div class="content_body">
+			<div class="body_container">
+				 <div style="float:left;" class="third left third_filter"> 
+					<h3> Details </h3>
+				 	<p> <b>Name/Age:</b> <br> Lindsay Paterson - 21</p>
+					<p> <b>Current Location:</b> <br> Ajax, Ontario - Canada</p>
+					<p> <b>Current Occupation: </b><br> Engineering Student with <br> University Braunschweig </p>
+					
+				 </div>
+				<span class="helper"><img src="lindsaymrjpaterson.com_files/Profile.png" class="thirdimg"></span>
+				<div style="float:right;" class="third right third_filter"> 
+					<h3> Quick Summary </h3>
+					<p>I consider myself a Jack-of-all-Trades. I seek challenges and unique opportunities that keep me learning -
+						a trait that's given me a broad range of skills and experiences. Currently, aside from my studies, 
+						my focus is on improving my Web and Game Development skills.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="content_section" id="Experiences">
+		<div class="content_head grey blue">
+			<h1 id="Experiences_header">Experiences</h1>
+		</div>
+		<div class="content_body">
+			<div class="body_container">
+				<img src="lindsaymrjpaterson.com_files/Experiences.png" class="halfimg">
+				<div class="half right"> 
+					<p class="experience_item" id="EXOU"><b>Software Developer </b>- EXO U inc. <br> <span class="job_date">May 2014 - August 2014 | Montreal, QC</span></p>
+					<div style="display: none;" id="EXOU_experience" class="experience_dropdown">
+						<a target="_blank" href="http://www.exou.com/">www.exou.com</a>
+						<ul>
+							<li>Created and envisioned new features and applications for the EXO framework</li>
+							<li>Built cross platform applications using the EXO framework</li>
+							<li>Created and developed the analytics solution for EXO U</li>
+							<li>Developed, fixed and improved new and existing internal office applications </li>
+						</ul>
+					</div>
+					<p class="experience_item" id="IBM"> <b>Test Automation Developer</b> - IBM <br> <span class="job_date">January 2014 - April 2014 | Ottawa, ON</span></p>
+					<div style="display: none;" id="IBM_experience" class="experience_dropdown">
+						<a target="_blank" href="http://www.ibm.com/ibm/us/en/">www.ibm.com</a>
+						<ul>
+							<li>Developed features for the Cognos Workspace dashboard product</li>
+							<li>Automated previously manual tests for Cognos Workspace</li>
+							<li>Participated and assisted in code reviews</li>
+							<li>Fix code errors and bugs</li>
+						</ul>
+					</div>
+					<p class="experience_item" id="SHAW"> <b>Software Development Intern </b>- Shaw Communications <br> <span class="job_date">May 2013 - August 2013 | Calgary, AB</span></p>
+					<div style="display: none;" id="SHAW_experience" class="experience_dropdown">
+						<a target="_blank" href="http://www.shaw.ca/corporate/about-shaw/">www.shaw.ca</a>
+						<ul>
+							<li>Designed and implemented a custom web application to interact with an Oracle SQL Database</li>
+							<li>Independently designed and developed the client-side interface, UI and the back-end server</li>
+							<li>Implemented basic LDAP authentication and authorization</li>
+							<li>Acted as team lead over a group of 3 other employees</li>
+						</ul>
+					</div>
+					<p class="experience_item" id="MASSIVEDMG"> <b>Game Tester/Support Admin </b>- Massive Damage inc. <br> <span class="job_date">September 2012 - December 2012 | Toronto, ON</span></p>
+					<div style="display: none;" id="MASSIVEDMG_experience" class="experience_dropdown">
+						<a target="_blank" href="http://massdmg.com/">www.massdmg.ca</a>
+						<ul>
+							<li>Created in-game HTML suggestion popups</li>
+							<li>Performed full QA for all changed/updated products for MDI</li>
+							<li>Reviewed and provided support to users with product issues</li>
+							<li>Killed Zombies</li>
+						</ul>
+					</div>
+					<p class="experience_item" id="OLG"> <b>Process Manager </b>- OLG <br> <span class="job_date">January 2012 - April 2012 | North York, ON</span></p>
+					<div style="display: none;" id="OLG_experience" class="experience_dropdown">
+						<a target="_blank" href="http://www.olg.ca/about/index.jsp">www.olg.ca</a>
+						<ul>
+							<li>Designed all graphics and layouts for a new ESM team website</li>
+							<li>Reviewed reports for changes to OLG</li>
+							<li>Followed up with report assignees about problems or complications </li>
+							<li>Assisted in the financial tracking of profit loss due to unexpected errors</li>
+						</ul>
+					</div>
+					<p class="experience_item" id="PROJECT"> <b>Personal Projects </b><br> <span class="job_date">Side-jobs and projects</span></p>
+					<div style="display: none;" id="PROJECT_experience" class="experience_dropdown">
+						Select a project to learn more about it:
+						<ul>
+							<li class="custom_project" id="dogchair">Custom Dog Wheelchair<br><span class="job_date">July 22 - August 3, 2014 | Whitby, ON</span></li>
+							<li class="custom_project" id="theorpg">Theo the RPG<br><span class="job_date">May 3, 2014 - Present | Building my own RPG using Unity - details page coming soon!</span></li>
+							<li class="custom_project" id="earthquaketable">Earthquake Resistant Table<br><span class="job_date">September 2012 - December 2012 | Waterloo, ON - details page coming soon!</span></li>
+						</ul>
+					</div>
+					<p class="experience_item" id="EDUCATION"> <b>Education </b><br> <span class="job_date">Academic Progress</span></p>
+					<div style="display: none;" id="EDUCATION_experience" class="experience_dropdown">
+						<ul>
+							<li><b>BAS Systems Design Engineering </b>- Waterloo University, Canada <br> <span class="job_date">Present | Expected Graduation: September 2016</span></li>
+							<li><b>Academic Engineering Exchange </b>- Braunschweig University, Germany <br> <span class="job_date">September 2014 - September 2015</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--include jobs and side projects
+			have own page linked here for art gallery 
+			and side project pictures and deets-->
+	</div>
+
+	<div class="content_section" id="Skills">
+		<div class="content_head grey red">
+			<h1 id="Skills_header">Skills</h1>
+		</div>
+
+		<div class="content_body">
+			<div class="body_container">
+				<div dir="rtl" class="half left">
+					<h3 id="TECHNICAL" class="skill_item"> Technical </h3>
+					<div id="TECHNICAL_skill" class="skill_dropdown">
+						<ul><b>Professional Experience</b>
+							<li>JavaScript</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Node.js</li>
+							<li>JQuery</li>
+							<li>SQL</li>
+							<li>Mac, Linux, Windows </li>
+							<li>Stage Production Sound </li>
+							<li>Stage Production Lighting </li>
+						</ul>
+						<ul><b>Personal/Academic Experience</b>
+							<li>Java</li>
+							<li>C++</li>
+							<li>Unity</li>
+							<li>Adobe Photoshop/Illustrator</li>
+						</ul>
+					</div>
+					<h3 id="SOFT" class="skill_item"> Soft </h3>
+					<div id="SOFT_skill" class="skill_dropdown">
+						<ul>
+							<li>Team Management</li>
+							<li>Complex Problem Solving</li>
+							<li>Handling Vauge Requirements</li>
+							<li>Fundraising</li>
+							<li>English  - native language</li>
+							<li>German - conversationally fluent</li>
+						</ul>
+					</div>
+				</div>
+				<img src="lindsaymrjpaterson.com_files/Skills.png" class="halfimg">
+			</div>
+		</div>
+	</div>
+
+	<div class="content_section" id="Interests">
+		<div class="content_head grey green">
+			<h1 id="Interests_header">Interests</h1>
+		</div>
+		<div class="content_body">
+			<div class="body_container">
+				<img src="lindsaymrjpaterson.com_files/Interests.png" class="halfimg">
+
+				<div class="half right"> 
+					<p class="interest_item" id="ART"><b> Art </b> <br> <span class="job_date">I love working with art in all medias and any canvas I can get my hands on. Portfolio collection coming soon!</span></p>
+					<p class="interest_item" id="GAME"><b> Video Games </b> <br> <span class="job_date">Been a Life-long Gamer - check out what I'm playing and my all-time favourites</span></p>
+					<div style="display: none;" id="GAME_interest" class="interest_dropdown">
+							<ul><b>Currently Playing</b>
+							<li>Dark Souls 2</li>
+							<li>Legend of Zelda - Windwaker</li>
+							<li>Battleblock Theatre</li>
+							<li>WoW - German Server</li>
+						</ul>
+						<ul><b>All-Time Favourites</b>
+							<li>Rayman - original game from 1995</li>
+							<li>Borderlands 2</li>
+							<li>Dark Souls</li>
+							<li>Final Fantasy X</li>
+							<li>D&amp;D (although not technically a video game)</li>
+						</ul>
+					</div>
+					<p class="interest_item" id="MUSIC"><b> Music </b> <br> <span class="job_date">I love every and all genres - check out some of my favourite songs</span></p>
+					<div style="display: none;" id="MUSIC_interest" class="interest_dropdown">
+						<ul>
+							<li>Close to Me - the Cure</li>
+							<li>El Paso - Marty Robbins</li>
+							<li>Duality - Slipknot</li>
+							<li>Girl in the Little Green Hat - Mrs. Henderson Presents</li>
+							<li>She Sells Sanctuary - the Cult</li>
+							<li>Time to Pretend - MGMT</li>
+							<li>Synchronicity II - Police</li>
+							<li>Midnight City - M83</li>
+						</ul>
+					</div>
+					<p class="interest_item" id="TRAVELLING"><b> Travelling </b> <br> <span class="job_date">One of my greatest goals in life, and I've done pretty well so far. Check out where I've been - coming soon!</span></p>
+					<div style="display: none;" id="TRAVELLING_interest" class="interest_dropdown">
+					</div>
+					<p class="interest_item" id="COSPLAY"><b> Cosplay </b> <br> <span class="job_date">A new hobby I picked up recently, but am already in love with. Cosplay collection coming soon!</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content_section grey purple" style="padding-bottom: 50px;" id="Contact">
+		<div class="content_head">
+			<h1 id="Contact_header">Contact</h1>
+		</div>
+		<div class="content_body grey" style="color:white; padding-top: 0px; padding-bottom: 50px;">
+			<table class="contact_table"> <tbody><tr>
+				<!-- Ultimately, replace Phone Number (or skype name) with Github account -->
+			 	<td><img class="contact_icon" src="lindsaymrjpaterson.com_files/linkedin_icon.png"><a href="http://www.linkedin.com/in/lindsaypaterson"> Linked In </a></td>
+				<td><img src="lindsaymrjpaterson.com_files/email_icon.png"><a href="mailto:lindsaymrjpaterson@gmail.com"> lindsaymrjpaterson@gmail.com </a> </td></tr>
+				<tr><td><img class="contact_icon" src="lindsaymrjpaterson.com_files/phone_icon.png">(905)550-9179 </td>
+				<td><img class="contact_icon" src="lindsaymrjpaterson.com_files/skype_icon.png"> linzey101 </td></tr>
+			</tbody></table>
+		</div>
+	</div>
+
+
+
+
+
+</body></html>

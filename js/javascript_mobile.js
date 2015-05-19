@@ -1,8 +1,9 @@
 $(document).ready(function() {
 	// Start Actions //
+	$("body").css('width', '100vw');
 	$("#topbar_dropdown_items").css('height', $(window).height()-50);
 	$("#topbar_dropdown_items").hide();
-	// $(".topbar").show();
+	$(".topbar").show();
 
 	// TopBar Actions //
 	$('#topbar_dropdown').on("click", function(e){
