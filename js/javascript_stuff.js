@@ -345,13 +345,15 @@ $(document).ready(function() {
     });
 	//Hover on Art Pic
 	$('.landscape, .portrait').click( function(){
-        	var img = $(this).attr("src");
+        	var img = $(this).attr("src").replace(".jpg", "");
+ 
+        	img+="_big.jpg";
         	var element = document.createElement('img');
-        	if($("#art").has("img")){
-        		$("#art").empty();
+        	if($("#artthing").has("img")){
+        		$("#artthing").empty();
         	}
        	    $(element).addClass("big").attr("src", img)
-        	.appendTo($("#art")).click(function(){
+        	.appendTo($("#artthing")).click(function(){
         		$(this).remove();
     		});
        	    

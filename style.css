@@ -111,6 +111,7 @@ a{
 	margin: 0 auto;
 	color: white;
 	position:absolute;
+	text-shadow:2px 2px black;
 } 
 .intro_container h1{
 font-size: 60px;
